@@ -32,14 +32,14 @@ CREATE TABLE academic_sessions (
 
 CREATE TABLE courses (
     id NUMBER NOT NULL,
-    course_name VARCHAR2(15) NOT NULL,
+    course_name VARCHAR2(50) NOT NULL,
 
     aca_ses_id NUMBER NOT NULL,
     dept_id NUMBER NOT NULL,
-    login_id VARCHAR2(20) NOT NULL,
-    building VARCHAR2(10) NOT NULL,
-    room VARCHAR2(10) NOT NULL,
-    date_time DATE NOT NULL
+    login_id VARCHAR2(20),
+    building VARCHAR2(10),
+    room VARCHAR2(10),
+    date_time VARCHAR2(20)
 );
 
 CREATE TABLE online_courses (
@@ -50,7 +50,7 @@ CREATE TABLE online_courses (
 CREATE TABLE seated_courses (
     building VARCHAR2(10) NOT NULL,
     room VARCHAR2(10) NOT NULL,
-    date_time DATE NOT NULL
+    date_time VARCHAR2(20) NOT NULL
 );
 
 CREATE TABLE student_course_details (
@@ -76,7 +76,7 @@ CREATE TABLE exams (
 
 CREATE TABLE exam_types (
     exam_type VARCHAR2(15) NOT NULL,
-    exam_name VARCHAR2(30) NOT NULL,
+    exam_name VARCHAR2(100) NOT NULL,
     exam_description VARCHAR2(255)
 );
 
@@ -91,17 +91,10 @@ CREATE TABLE faculties (
     first_name      VARCHAR2(25) NOT NULL,
     last_name       VARCHAR2(25) NOT NULL,
     email           VARCHAR2(255) NOT NULL,
-
-    dept_id      NUMBER NOT NULL
-);
-
-CREATE TABLE full_time (
-    salary NUMBER NOT NULL,
-    insurance VARCHAR2(20) NOT NULL
-);
-
-CREATE TABLE part_time (
-    hourly_rate NUMBER NOT NULL
+    salary      NUMBER,
+    insurance       VARCHAR2(255),
+    hourly_rate     NUMBER,
+    dept_id     NUMBER NOT NULL
 );
 
 CREATE TABLE faculty_course_details (
