@@ -10,7 +10,7 @@ CREATE TABLE students (
     id      NUMBER NOT NULL,
     first_name      VARCHAR2(25) NOT NULL,
     last_name       VARCHAR2(25) NOT NULL,
-    registration_yr NUMBER NOT NULL,
+    registration_yr DATE NOT NULL,
     email           VARCHAR2(255) NOT NULL,
 
     parent_info_id NUMBER
