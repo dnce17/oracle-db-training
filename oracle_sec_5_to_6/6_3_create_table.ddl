@@ -64,7 +64,8 @@ CREATE TABLE exam_results (
     grade VARCHAR2(2) NOT NULL,
 
     student_id NUMBER NOT NULL,
-    exam_id NUMBER NOT NULL
+    exam_id NUMBER NOT NULL,
+    course_id NUMBER NOT NULL,
 ); 
 
 CREATE TABLE exams (
@@ -105,7 +106,7 @@ CREATE TABLE faculty_course_details (
 );
 
 CREATE TABLE faculty_login_details (
-    login_date_time DATE NOT NULL,
+    login_date_time TIMESTAMP NOT NULL,
 
     faculty_id NUMBER NOT NULL
 );
