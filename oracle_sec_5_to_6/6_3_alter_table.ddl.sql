@@ -1,4 +1,4 @@
--- Primary Key Constraints
+-- PRIMARY KEY Constraints
 ALTER TABLE parent_information ADD CONSTRAINT pk_parent_info PRIMARY KEY (id);
 ALTER TABLE students ADD CONSTRAINT pk_student PRIMARY KEY (id);
 ALTER TABLE academic_sessions ADD CONSTRAINT pk_aca_ses PRIMARY KEY (id);
@@ -11,15 +11,14 @@ ALTER TABLE departments ADD CONSTRAINT pk_department PRIMARY KEY (id);
 ALTER TABLE faculties ADD CONSTRAINT pk_fcty PRIMARY KEY (id);
 ALTER TABLE faculty_login_details ADD CONSTRAINT pk_fcty_login_dtl PRIMARY KEY (login_date_time);
 
-
--- UNIQUE Key Constraints
+-- UNIQUE KEY Constraints
 ALTER TABLE courses ADD CONSTRAINT uk_crse_name UNIQUE (course_name);
 ALTER TABLE departments ADD CONSTRAINT uk_dept_name UNIQUE (dept_name);
 ALTER TABLE students ADD CONSTRAINT uk_sdt_email UNIQUE (email);
 ALTER TABLE faculties ADD CONSTRAINT uk_fcty_email UNIQUE (email);
 ALTER TABLE academic_sessions ADD CONSTRAINT uk_ses_name UNIQUE (session_name);
 
--- FOREIGN Key Constraints
+-- FOREIGN KEY Constraints
 ALTER TABLE students ADD CONSTRAINT fk_student_parent_info FOREIGN KEY (parent_info_id)
     REFERENCES parent_information (id);
 
@@ -35,7 +34,7 @@ ALTER TABLE courses ADD CONSTRAINT fk_course_dept_id FOREIGN KEY (dept_id)
 ALTER TABLE courses ADD CONSTRAINT fk_course_login_id FOREIGN KEY (login_id)
     REFERENCES online_courses (login_id);
 
--- Recall composite key, so just 1 statement need for (building, room, date_time)
+-- Recall composite key, so just 1 statement needed for (building, room, date_time)
 ALTER TABLE courses ADD CONSTRAINT fk_course_building FOREIGN KEY (building, room, date_time)
     REFERENCES seated_courses (building, room, date_time);
 
@@ -48,6 +47,9 @@ ALTER TABLE exam_results ADD CONSTRAINT fk_exam_result_student_id FOREIGN KEY (s
     REFERENCES students (id);
 ALTER TABLE exam_results ADD CONSTRAINT fk_result_exam_id FOREIGN KEY (exam_id)
     REFERENCES exams (id);
+ALTER TABLE exam_results ADD CONSTRAINT fk_result_course_id FOREIGN KEY (course_id)
+    REFERENCES courses (id);
+
 ALTER TABLE exams ADD CONSTRAINT fk_exam_exam_type FOREIGN KEY (exam_type)
     REFERENCES exam_types (exam_type);
 
