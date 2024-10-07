@@ -6,7 +6,7 @@
 * Week 1: sec_1_to_4
 * Week 2: sec_5_to_6
 * Week 3: programming_2_3
-* Week 4: programming_4_5
+* Week 4 & 5: programming_4_5
 
 ## Purpose
 The primary goals of this training is to...
