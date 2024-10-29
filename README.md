@@ -13,8 +13,11 @@
   * 7.2 - Oracle Nonequijoins and Outer Joins
   * 8.1 - Group Functions
   * 8.2 - COUNT, DISTINCT, NVL
-  
-
+* Week 8: programming_9
+  * 9.1 - Using Group By and Having Clauses
+  * 9.2 - Using Rollup and Cube Operations, and Grouping Sets
+  * 9.3 - Using Set Operators
+ 
 ## Purpose
 The primary goals of this training is to...
 * understand and model relational databases
