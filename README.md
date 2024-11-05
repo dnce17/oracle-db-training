@@ -17,6 +17,12 @@
   * 9.1 - Using Group By and Having Clauses
   * 9.2 - Using Rollup and Cube Operations, and Grouping Sets
   * 9.3 - Using Set Operators
+* Week 9: programming_10_11 (NOTE: there's no practice for 11)
+  * 10.1 - Fundamentals of Subqueries
+  * 10.2 - Single-Row Subqueries
+  * 10.3 - Multiple-Row Subqueries
+  * 10.4 - Correlated Subqueries
+  * 11.1 - Ensuring Quality Query Results
  
 ## Purpose
 The primary goals of this training is to...
