@@ -23,7 +23,7 @@
   * 10.3 - Multiple-Row Subqueries
   * 10.4 - Correlated Subqueries
   * 11.1 - Ensuring Quality Query Results
- * Week 10: programming_12_13
+* Week 10: programming_12_13
   * 12.1 - INSERT Statements
   * 12.2 - Updating Column Values and Deleting Rows
   * 12.3 - DEFAULT Values, MERGE, and Multi-Table Inserts
