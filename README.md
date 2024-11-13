@@ -23,6 +23,14 @@
   * 10.3 - Multiple-Row Subqueries
   * 10.4 - Correlated Subqueries
   * 11.1 - Ensuring Quality Query Results
+ * Week 10: programming_12_13
+  * 12.1 - INSERT Statements
+  * 12.2 - Updating Column Values and Deleting Rows
+  * 12.3 - DEFAULT Values, MERGE, and Multi-Table Inserts
+  * 13.1 - Creating Tables
+  * 13.2 - Using Data Types
+  * 13.3 - Modifying a Table
+ 
  
 ## Purpose
 The primary goals of this training is to...
