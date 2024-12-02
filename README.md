@@ -26,12 +26,23 @@
 * Week 10: programming_12_13
   * 12.1 - INSERT Statements
   * 12.2 - Updating Column Values and Deleting Rows
-  * 12.3 - DEFAULT Values, MERGE, and Multi-Table Inserts
+  * 12.3 . DEFAULT Values, MERGE, and Multi.Table Inserts
   * 13.1 - Creating Tables
   * 13.2 - Using Data Types
   * 13.3 - Modifying a Table
- 
- 
+* Week 11: programming_14_to_17
+  * 14.1 - Intro to Constraints; NOT NULL and UNIQUE Constraints
+  * 14.2 - PRIMARY KEY, FOREIGN KEY, and CHECK Constraints
+  * 14.3 - Managing Constraints
+  * 15.1 - Creating Views
+  * 15.2 - DML Operations and Views
+  * 15.3 - Managing Views
+  * 16.1 - Working With Sequences
+  * 16.2 - Indexes and Synonyms
+  * 17.1 - Controlling User Access
+  * 17.2 - Creating and Revoking Object Privileges
+  * 17.3 - Regular Expressions
+
 ## Purpose
 The primary goals of this training is to...
 * understand and model relational databases
